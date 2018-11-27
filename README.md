@@ -4,6 +4,7 @@ This repository contains a implementation for following paper:
 
 ## Citation
 If you find this article useful please consider citing:
+
 		@article{liu2018breaking,
 		  title={Breaking the curse of horizon: Infinite-horizon off-policy estimation},
 		  author={Liu, Qiang and Li, Lihong and Tang, Ziyang and Zhou, Dengyong},
