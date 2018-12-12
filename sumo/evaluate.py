@@ -185,7 +185,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description='evaluate SARS file for SUMO environment')
 	parser.add_argument('--nt', type = int, required = False, default = num_trajectory)
 	parser.add_argument('--ts', type = int, required = False, default = truncate_size)
-	parser.add_argument('--bp', type = float, required = False, default = BP)
+	parser.add_argument('--bp', type = int, required = False, default = BP)
 	args = parser.parse_args()
 
 	theta = np.array([[0.1], [0.2], [0.4], [0.6], [0.8], [1.0]])
