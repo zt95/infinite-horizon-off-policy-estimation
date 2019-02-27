@@ -191,7 +191,7 @@ if __name__ == "__main__":
 	theta = np.array([[0.1], [0.2], [0.4], [0.6], [0.8], [1.0]])
 	agent_target = Simple_agent(n_tl, theta[5, :])
 	
-	filename_prescript = './SASR_data/SASR'.format(n, m)
+	filename_prescript = 'SASR_data/SASR'
 
 	nt = args.nt 	#number of trajectory
 	ts = args.ts 	#truncated size
