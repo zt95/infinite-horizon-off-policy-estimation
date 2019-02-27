@@ -232,10 +232,10 @@ if __name__ == '__main__':
 		for j in range(6):
 			if simple:
 				agent = Simple_agent(n_tl, theta[j,:])
-				filename = './SASR_data/SASR{}_{}.npy'.format(n, m, j, seed_base + i)
+				filename = 'SASR_data/SASR{}_{}.npy'.format(n, m, j, seed_base + i)
 			else:
 				agent = Easy_agent(n_tl, theta[j,:4], theta[j,4:8], theta[j,8:])
-				filename = './SASR_data/SASR{}_{}.npy'.format(n, m, j, seed_base + i)
+				filename = 'SASR_data/SASR{}_{}.npy'.format(n, m, j, seed_base + i)
 			sys.stdout.flush()
 			traci.start(command)
 			rollout(truncation_size, filename, agent = agent, simple = simple)
