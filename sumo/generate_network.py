@@ -7,7 +7,7 @@ from time import sleep
 def generate_nodes(n, m, filename):
 	with open(filename, 'w') as f_nodes:
 		print('<?xml version="1.0" encoding="UTF-8"?>', file = f_nodes)
-		print('<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/nodes_file.xsd">',
+		print('<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">',
 			file = f_nodes)
 		for i in range(n):
 			for j in range(m):
@@ -26,7 +26,7 @@ def generate_edges(n, m, filename):
 	direction = [(1,0), (0,1), (-1,0), (0,-1)]
 	with open(filename, 'w') as f_edges:
 		print('<?xml version="1.0" encoding="UTF-8"?>', file = f_edges)
-		print('<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/edges_file.xsd">', file = f_edges)
+		print('<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">', file = f_edges)
 		for i in range(n):
 			for j in range(m):
 				if i in [0, n-1] and j in [0, m-1]:
