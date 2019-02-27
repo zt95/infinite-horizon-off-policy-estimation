@@ -45,7 +45,7 @@ class Density_Ratio_kernel(object):
 		x = w * self.policy_ratio / norm_w - w_next / norm_w_next
 		x2 = w2 * self.policy_ratio2 / norm_w2 - w_next2 / norm_w_next2
 
-		diff_xx = tf.expand_dims(self.next_state, 0) - tf.expand_dims(self.next_state2, 1)
+		diff_xx = tf.expand_dims(self.next_state, 1) - tf.expand_dims(self.next_state2, 0)
 		K_xx = tf.exp(-tf.reduce_sum(tf.square(diff_xx), axis = -1)/(2.0*self.med_dist*self.med_dist))
 		norm_K = tf.reduce_sum(K_xx)
 
