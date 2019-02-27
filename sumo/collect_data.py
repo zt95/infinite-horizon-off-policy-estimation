@@ -201,7 +201,7 @@ if __name__ == '__main__':
 	m = 3
 	net_file_ID = 0 	# we can change this ID with different number of n,m
 	n_tl = (n-2)*(m-2)	# number of traffic light
-	initial_netfile(n, m, net_file_ID)
+	# initial_netfile(n, m, net_file_ID)
 	generate_detectors(n, m, net_file_ID)
 	
 	parser = argparse.ArgumentParser(description='Create SARS file for SUMO environment')
