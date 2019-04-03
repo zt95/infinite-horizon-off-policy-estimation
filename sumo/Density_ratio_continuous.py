@@ -193,7 +193,7 @@ class Density_Ratio_kernel(object):
 			# policy_ratio = POLICY_RATIO[subsamples]
 			policy_ratio = (PI1[subsamples] + epsilon)/(PI0[subsamples] + epsilon)
 
-			subsamples = np.random.choice(N, batch_size)
+			# subsamples = np.random.choice(N, batch_size)
 			s2 = S[subsamples]
 			sn2 = SN[subsamples]
 			# policy_ratio2 = POLICY_RATIO[subsamples]
